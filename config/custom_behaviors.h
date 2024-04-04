@@ -132,14 +132,15 @@ ZMK_BEHAVIOR(comma_dance, tap_dance,
 // As per PR 1938
 
 // Spectacle controls
-#define SPC_UP    &kp LA(LG(UP))         // Cycle through upper positions
-#define SPC_DOWN  &kp LA(LG(DOWN))       // Cycle through lower positions
-#define SPC_LEFT  &kp LA(LG(LEFT))       // Cycle through left positions
-#define SPC_RIGHT &kp LA(LG(RIGHT))      // Cycle through right positions
-#define SPC_FULL  &kp LA(LG(F))          // Fullscreen
-#define SPC_MVR   &kp LC(LA(LG(RIGHT)))  // Move right one screen
-#define SPC_MVL   &kp LC(LA(LG(LEFT)))   // Move left one screen
-#define SPC_UNDO  &kp LC(LA(LG(Z)))      // Undo last spectacle action
+#define SPC_UP    &kp LG(UP)         // Cycle through upper positions
+#define SPC_DOWN  &kp LG(DOWN)       // Cycle through lower positions
+#define SPC_LEFT  &kp LG(LEFT)       // Cycle through left positions
+#define SPC_RIGHT &kp LG(RIGHT)      // Cycle through right positions
+#define SPC_FULL  &kp LG(F)          // Fullscreen
+#define SPC_MVR   &kp LS(LG(UP))     // Move up
+#define SPC_MVL   &kp LS(LG(DOWN))   // Move down
+#define SPC_MVL   &kp LS(LG(LEFT))   // Move left
+#define SPC_MVL   &kp LS(LG(RIGHT))  // Move right
 
 // Mouse Layer command shortcuts
 // All keys become tap: command + (key) and long tap: shift + command + (key)
@@ -157,10 +158,10 @@ ZMK_BEHAVIOR(comma_dance, tap_dance,
 #define CANCEL      &kp K_CANCEL        // cancel caps-word, num-word and smart-mouse
 #define LHYP        LS(LC(LA(LGUI)))
 #define RHYP        RS(RC(RA(RGUI)))
-#define COPY_CUT    &mt LG(X) LG(C)
-#define CMD_PASTE   &kp LG(V)
-#define CMD_UNDO    &kp LG(Z)
-#define CMD_REDO    &kp LS(LG(Z))
+#define COPY_CUT    &mt LC(X) LC(C)
+#define CMD_PASTE   &kp LC(V)
+#define CMD_UNDO    &kp LC(Z)
+#define CMD_REDO    &kp LS(LC(Z))
 #define PREV_WINDOW &kp LS(LG(GRAVE))
 #define NEXT_WINDOW &kp LG(GRAVE)
 #define NEXT_TAB    &mtabnext          // next tab in vim or browser(with vimium)

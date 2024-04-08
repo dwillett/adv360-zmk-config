@@ -189,5 +189,5 @@ ZMK_BEHAVIOR(comma_dance, tap_dance,
 #define BT_0 &bt BT_SEL 0
 #define BT_1 &bt BT_SEL 1
 #define BT_2 &bt BT_SEL 2
-#define BT_3 &bt BT_SEL 3
+ #define BT_3 &bt BT_SEL 3
 #define BT_4 &bt BT_SEL 4

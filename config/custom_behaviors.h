@@ -137,9 +137,10 @@ ZMK_BEHAVIOR(comma_dance, tap_dance,
 #define SPC_LEFT    &kp LG(LEFT)       // Cycle through left positions
 #define SPC_RIGHT   &kp LG(RIGHT)      // Cycle through right positions
 #define SPC_FULL    &kp LG(F)          // Fullscreen
-#define SPC_GROW    &kp LG(A)          // Move up
-#define SPC_SHRINK  &kp LG(D)          // Move down
-
+#define SPC_GROW    &kp LG(A)          // Grow i3 selection
+#define SPC_SHRINK  &kp LG(D)          // Shrink i3 selection
+#define SPC_PREV    &kp LG(F11)        // Go to previous workspace
+#define SPC_NEXT    &kp LG(F12)        // Go to next workspace
 
 // Mouse Layer command shortcuts
 // All keys become tap: command + (key) and long tap: shift + command + (key)

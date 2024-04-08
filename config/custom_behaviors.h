@@ -131,16 +131,14 @@ ZMK_BEHAVIOR(comma_dance, tap_dance,
 #define GLOBE C_KEYBOARD_LAYOUT_SELECT
 // As per PR 1938
 
-// Spectacle controls
-#define SPC_UP    &kp LG(UP)         // Cycle through upper positions
-#define SPC_DOWN  &kp LG(DOWN)       // Cycle through lower positions
-#define SPC_LEFT  &kp LG(LEFT)       // Cycle through left positions
-#define SPC_RIGHT &kp LG(RIGHT)      // Cycle through right positions
-#define SPC_FULL  &kp LG(F)          // Fullscreen
-#define SPC_MVU   &kp LS(LG(UP))     // Move up
-#define SPC_MVD   &kp LS(LG(DOWN))   // Move down
-#define SPC_MVL   &kp LS(LG(LEFT))   // Move left
-#define SPC_MVR   &kp LS(LG(RIGHT))  // Move right
+// i3 controls
+#define SPC_UP      &kp LG(UP)         // Cycle through upper positions
+#define SPC_DOWN    &kp LG(DOWN)       // Cycle through lower positions
+#define SPC_LEFT    &kp LG(LEFT)       // Cycle through left positions
+#define SPC_RIGHT   &kp LG(RIGHT)      // Cycle through right positions
+#define SPC_FULL    &kp LG(F)          // Fullscreen
+#define SPC_GROW    &kp LS(LG(UP))     // Move up
+#define SPC_SHRINK  &kp LS(LG(DOWN))   // Move down
 
 // Mouse Layer command shortcuts
 // All keys become tap: command + (key) and long tap: shift + command + (key)

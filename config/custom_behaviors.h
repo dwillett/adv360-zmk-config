@@ -133,6 +133,8 @@ ZMK_BEHAVIOR(comma_dance, tap_dance,
 #define SPC_SHRINK  &kp LG(D)          // Shrink i3 selection
 #define SPC_PREV    &kp LG(F11)        // Go to previous workspace
 #define SPC_NEXT    &kp LG(F12)        // Go to next workspace
+#define SPC_TOGGLE  &kp LG(SPACE)      // Toggle between floating and window
+#define SPC_FOCUS   &kp LG(LS(SPACE))  // Toggle focus floating and window
 
 // Mouse Layer command shortcuts
 // All keys become tap: command + (key) and long tap: shift + command + (key)

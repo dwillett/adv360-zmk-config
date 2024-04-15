@@ -135,6 +135,7 @@ ZMK_BEHAVIOR(comma_dance, tap_dance,
 #define SPC_NEXT    &kp LG(F12)        // Go to next workspace
 #define SPC_TOGGLE  &kp LG(SPACE)      // Toggle between floating and window
 #define SPC_FOCUS   &kp LG(LS(SPACE))  // Toggle focus floating and window
+#define SPC_CLOSE   &kp LG(C)          // Close window
 
 // Mouse Layer command shortcuts
 // All keys become tap: command + (key) and long tap: shift + command + (key)

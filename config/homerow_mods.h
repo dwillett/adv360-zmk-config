@@ -29,10 +29,6 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand
 
 // SYM Layer home row mods
 #define SYM_CARET  &hml LGUI CARET
-#define SYM_MINUS  &hml LALT MINUS
-#define SYM_PLUS   &hml LCTRL PLUS
-#define SYM_EQUAL  &hml LSHFT EQUAL
-#define SYM_LBKT   &hmr LSHFT LBKT
-#define SYM_RBKT   &hmr RCTRL RBKT
-#define SYM_AT     &hmr RALT AT
-#define SYM_DOLLAR &hmr RGUI DOLLAR
+#define SYM_EQUAL  &hml LALT EQUAL
+#define SYM_UNDER  &hml LCTRL UNDERSCORE
+#define SYM_DOLLAR &hml LSHFT DOLLAR

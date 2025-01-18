@@ -31,10 +31,10 @@ ZMK_BEHAVIOR(mtabprev, macro,
 )
 
 // tap: sticky-shift | shift + tap/ double-tap: caps-word | hold: shift
-//ZMK_BEHAVIOR(smart_shft, mod_morph,
-//    bindings = <&sk LSHFT>, <&caps_word>;
-//    mods = <(MOD_LSFT)>;
-//)
+ZMK_BEHAVIOR(smart_shft, mod_morph,
+    bindings = <&sk LSHFT>, <&caps_word>;
+    mods = <(MOD_LSFT)>;
+)
 
 
 // Command+Tab swapper, requires PR #1366
@@ -167,9 +167,9 @@ ZMK_BEHAVIOR(comma_dance, tap_dance,
 #define SWAP_PREV   &kp LS(TAB)
 
 // Thumb keys
-#define SPC_NAV     &lt_spc NAV 0      // tap: space | shift + tap: underscore | hold: NAV layer
+#define SPC_SYM     &lt_spc SYM 0      // tap: space | shift + tap: underscore | hold: NAV layer
 #define RET_HYP     &mt RHYP ENTER     // tap: enter | hold: HYPER key
-#define BSPC_SYM    &lt_del SYM 0      // tap: backspace | lshft + tap: delete | rshft + tap: shift-delete | hold: SYM layer
+#define BSPC_NAV    &lt_del NAV 0      // tap: backspace | lshft + tap: delete | rshft + tap: shift-delete | hold: SYM layer
 #define SHFT_NUM    &shift_num NUM 0   // tap: sticky shift | double-tap: sticky num layer | hold: NUM layer
 
 /* #define MAKE_LONG_HOLD(NAME, HOLD) \ */
